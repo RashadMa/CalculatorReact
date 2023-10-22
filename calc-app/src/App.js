@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='calc-container'>
+      <div className='calc-output'>
+        <div className='calc-previous'></div>
+        <div className='calc-current'></div>
+
+      </div>
+      <button className='del'>AC</button>
+      <button>÷</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>X</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>+</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>-</button>
+      <button>.</button>
+      <button>0</button>
+      <button className='del'>=</button>
     </div>
   );
 }
