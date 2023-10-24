@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #1c1c1c;
+}
+
+.calc-container {
+  display: grid;
+  margin-top: 2rem;
+  justify-content: center;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+}
+
+.calc-container > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 0.5px solid #1c1c1c;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.orange-operation {
+  background-color: #ff9500 !important;
+  color: white;
+}
+
+.calc-container > button:hover,
+.calc-container > button:focus {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.del {
+  grid-column: span 2;
+  background-color: #505050 !important;
+  color: white;
+}
+.delete {
+  background-color: #505050 !important;
+  color: white;
+}
+.digits {
+  background-color: #d4d4d2d9 !important;
+  color: white;
+}
+.del-2 {
+  grid-column: span 2;
+}
+
+.calc-output {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 0.75rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.calc-output .calc-previous {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.calc-output .calc-current {
+  color: white;
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
